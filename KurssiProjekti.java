@@ -8,12 +8,11 @@ public class KurssiProjekti {
 		
 		// Tulostetaan ohjeistus pelaajalle
 		
-		System.out.println("Tervetuloa pelaamaan Kivi-Sakset-Paperi -peliä tietokonetta vastaan.");
+		System.out.println("Tervetuloa pelaamaan Kivi-Sakset-Paperi -peliÃ¤ tietokonetta vastaan.");
 
-		System.out.println(
-				"Tässä pelissä oma vaihtoehto valitaan syöttämällä numero väliltä 0-2, jossa 0 on Kivi, 1 on Sakset ja 2 on Paperi.");
+		System.out.println("TÃ¤ssÃ¤ pelissÃ¤ oma vaihtoehto valitaan syÃ¶ttÃ¤mÃ¤llÃ¤ numero vÃ¤liltÃ¤ 0-2, jossa 0 on Kivi, 1 on Sakset ja 2 on Paperi.");
 
-		System.out.println("Pelin voi lopettaa syöttämällä numeron, joka on suurempi kuin 2. ");
+		System.out.println("Pelin voi lopettaa syÃ¶ttÃ¤mÃ¤llÃ¤ numeron, joka on suurempi kuin 2. ");
 
 		// alustetaan lopuksi tulostettavat pelaajan voitot, koneen voitot ja tasapelit
 		
@@ -29,7 +28,7 @@ public class KurssiProjekti {
 
 		do {
 
-			// Tietokone valitsee yhden luvun väliltä 0-2
+			// Tietokone valitsee yhden luvun vÃ¤liltÃ¤ 0-2
 			
 			Random rand = new Random(); 
 
@@ -43,31 +42,31 @@ public class KurssiProjekti {
 
 			System.out.println("Kone valitsi: " + kone); 
 			
-			// Verrataan syötettyä lukua valittuun lukuun.
+			// Verrataan syÃ¶tettyÃ¤ lukua valittuun lukuun.
 
 			if ((pelaaja == 0 && kone == 1) || (pelaaja == 1 && kone == 2) || (pelaaja == 2 && kone == 0)) {
 
 				System.out.println(" Pelaaja voitti!");
 
-				pelaajanvoitot++; // kasvatetaan pelaajan voittojen lukumäärää yhdellä
+				pelaajanvoitot++; // kasvatetaan pelaajan voittojen lukumÃ¤Ã¤rÃ¤Ã¤ yhdellÃ¤
 
 			} else if ((pelaaja == 0 && kone == 2) || (pelaaja == 1 && kone == 0) || (pelaaja == 2 && kone == 1)) {
 
 				System.out.println("Kone voitti!");
 
-				koneenvoitot++; // kasvatetaan koneen voittojen lukumäärää yhdellä
+				koneenvoitot++; // kasvatetaan koneen voittojen lukumÃ¤Ã¤rÃ¤Ã¤ yhdellÃ¤
 
 			} else if ((pelaaja == 0 && kone == 0) || (pelaaja == 1 && kone == 1) || (pelaaja == 2 && kone == 2)) {
 
 				System.out.println("Tasapeli!"); 
 
-			tasapelit++; // kasvatetaan tasapelien lukumäärää yhdellä
+			tasapelit++; // kasvatetaan tasapelien lukumÃ¤Ã¤rÃ¤Ã¤ yhdellÃ¤
 			
 			} else System.out.println("Lopetit pelin");
 			
 		} while ((pelaaja >= 0) && (pelaaja <= 2));
 		
-		//Kun pelaaja syöttää pienemmän kuin 0 tai suuremman kuin 2, lopettetaan silmukka ja tulostetaan lopputilanne
+		//Kun pelaaja syÃ¶ttÃ¤Ã¤ pienemmÃ¤n kuin 0 tai suuremman kuin 2, lopettetaan silmukka ja tulostetaan lopputilanne
 
 		System.out.println("Pelaajan voitot: " + pelaajanvoitot + ". " + "Koneen voitot: " + koneenvoitot + ".  "
 
